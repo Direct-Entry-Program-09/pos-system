@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #61EB3B;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SplashScreenFormController">
+   <children>
+      <ImageView fitHeight="129.0" fitWidth="434.0" layoutX="83.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/name.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="prgContainer" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="15.0" layoutY="371.0" stroke="BLACK" strokeType="INSIDE" width="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Rectangle fx:id="prgLoad" arcHeight="5.0" arcWidth="5.0" fill="#024d68" height="15.0" layoutY="371.0" stroke="BLACK" strokeType="INSIDE" width="90.0" />
+      <Label fx:id="lblStatus" layoutX="160.0" layoutY="318.0" style="-fx-background-color: white;" text="................Display something............................." />
+   </children>
+</AnchorPane>
