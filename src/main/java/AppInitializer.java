@@ -2,7 +2,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -18,7 +20,9 @@ public class AppInitializer extends Application {
         URL resource = this.getClass().getResource("view/SplashScreenForm.fxml");
         Parent container = FXMLLoader.load(resource);
         Scene scene=new Scene(container);
+        scene.setFill(Color.TRANSPARENT);
         primaryStage.setScene(scene);
+        primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.show();
         primaryStage.centerOnScreen();
 

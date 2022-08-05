@@ -56,9 +56,7 @@ public class SplashScreenFormController {
                 Parent container = FXMLLoader.load(resource);
                 Scene scene = new Scene(container);
                 Stage stage = new Stage();
-                scene.setFill(Color.TRANSPARENT);
                 stage.setScene(scene);
-                stage.initStyle(StageStyle.TRANSPARENT);
                 stage.setTitle("Login");
                 stage.show();
                 lblStatus.getScene().getWindow().hide();
